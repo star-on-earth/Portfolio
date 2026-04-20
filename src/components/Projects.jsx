@@ -12,8 +12,8 @@ const PROJECTS = [
     status: 'In Progress',
     highlight: true,
     links: {
-      github: 'https://github.com/star-on-earth/ArUco-Vision',   // ← replace ARUCO_REPO
-      docs:   'https://drive.google.com/drive/folders/1er1wLW1oDkeXuhu_x6Fbm88NTo4MooNU?usp=sharing',                                  // ← replace with your doc/report link
+      github: 'https://github.com/star-on-earth/ARUCO_REPO',   // ← replace ARUCO_REPO
+      docs:   'ARUCO_DOCS_URL',                                  // ← replace with your doc/report link
     },
   },
   {
@@ -27,8 +27,8 @@ const PROJECTS = [
     status: 'Active',
     highlight: false,
     links: {
-      github: 'https://github.com/star-on-earth/WealthWise', // ← replace
-      docs:   'https://drive.google.com/drive/folders/1er1wLW1oDkeXuhu_x6Fbm88NTo4MooNU?usp=sharing',                               // ← replace
+      github: 'https://github.com/star-on-earth/WEALTHWISE_REPO', // ← replace
+      docs:   'WEALTHWISE_DOCS_URL',                               // ← replace
     },
   },
   {
@@ -42,8 +42,8 @@ const PROJECTS = [
     status: 'Complete',
     highlight: false,
     links: {
-      github: 'https://github.com/star-on-earth/deepfake-analyzer',  // ← replace
-      docs:   'https://drive.google.com/drive/folders/1er1wLW1oDkeXuhu_x6Fbm88NTo4MooNU?usp=sharing',                                // ← replace with paper/report link
+      github: 'https://github.com/star-on-earth/DEEPFAKE_REPO',  // ← replace
+      docs:   'DEEPFAKE_DOCS_URL',                                // ← replace with paper/report link
     },
   },
   {
@@ -57,8 +57,7 @@ const PROJECTS = [
     status: 'Complete',
     highlight: false,
     links: {
-      github: 'https://github.com/star-on-earth/DepthAISpatialAnalysis',   // ← replace
-      docs:   'https://drive.google.com/drive/folders/1er1wLW1oDkeXuhu_x6Fbm88NTo4MooNU?usp=sharing',                                  // ← replace with report link
+      github: 'https://github.com/star-on-earth/DEPTHAI_REPO',   // ← replace
     },
   },
   {
@@ -72,7 +71,7 @@ const PROJECTS = [
     status: 'Complete',
     highlight: false,
     links: {
-      github: 'https://github.com/star-on-earth/AQI',       // ← replace
+      github: 'https://github.com/star-on-earth/AQI_REPO',       // ← replace
     },
   },
   {
@@ -86,7 +85,7 @@ const PROJECTS = [
     status: 'Complete',
     highlight: false,
     links: {
-      github: 'https://github.com/star-on-earth/SimulatedBomb',      // ← replace
+      github: 'https://github.com/star-on-earth/BOMB_REPO',      // ← replace
     },
   },
 ]

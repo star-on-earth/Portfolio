@@ -11,20 +11,20 @@ import { useEffect, useRef } from 'react'
 // ─────────────────────────────────────────────────────────────
 
 const CERTS = [
-  { name: 'OCI 2025 Generative AI Professional',          issuer: 'Oracle',                  icon: '◈', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: 'OCI 2025 AI Foundations Associate',            issuer: 'Oracle',                  icon: '◈', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: 'OCI 2025 Data Science Professional',           issuer: 'Oracle',                  icon: '◈', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: 'Oracle Data Platform 2025 Foundations',        issuer: 'Oracle',                  icon: '◈', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: 'Securely Connecting IoT Devices to Cloud',     issuer: 'AWS',                     icon: '☁', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: 'Getting Started with AWS IoT',                 issuer: 'AWS',                     icon: '☁', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: 'Handling AWS IoT Device Data and States',      issuer: 'AWS',                     icon: '☁', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: 'Lean Six Sigma Yellow Belt',                   issuer: 'C.S.S.C / Sparen',        icon: '▲', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: 'AI for Youth Bootcamp',                        issuer: 'Intel Digital Readiness',  icon: '⚡', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: 'AI-Driven Project Management',                 issuer: 'UPBUILD Academy',          icon: '⚡', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: 'Activation Workshop',                          issuer: '1M1B / AICTE / Salesforce',icon: '✦', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: 'Ethical Hacking Workshop (2 Days)',             issuer: 'IIT Bhubaneswar',          icon: '■', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: 'IoT Internship Certificate',                   issuer: 'Jadavpur University',      icon: '●', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: 'Forensic Science Webinar',                     issuer: 'Adamas University',        icon: '✦', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'OCI 2025 Generative AI Professional',          issuer: 'Oracle',                  icon: '◈', url: 'CERT_URL' },
+  { name: 'OCI 2025 AI Foundations Associate',            issuer: 'Oracle',                  icon: '◈', url: 'CERT_URL' },
+  { name: 'OCI 2025 Data Science Professional',           issuer: 'Oracle',                  icon: '◈', url: 'CERT_URL' },
+  { name: 'Oracle Data Platform 2025 Foundations',        issuer: 'Oracle',                  icon: '◈', url: 'CERT_URL' },
+  { name: 'Securely Connecting IoT Devices to Cloud',     issuer: 'AWS',                     icon: '☁', url: 'CERT_URL' },
+  { name: 'Getting Started with AWS IoT',                 issuer: 'AWS',                     icon: '☁', url: 'CERT_URL' },
+  { name: 'Handling AWS IoT Device Data and States',      issuer: 'AWS',                     icon: '☁', url: 'CERT_URL' },
+  { name: 'Lean Six Sigma Yellow Belt',                   issuer: 'C.S.S.C / Sparen',        icon: '▲', url: 'CERT_URL' },
+  { name: 'AI for Youth Bootcamp',                        issuer: 'Intel Digital Readiness',  icon: '⚡', url: 'CERT_URL' },
+  { name: 'AI-Driven Project Management',                 issuer: 'UPBUILD Academy',          icon: '⚡', url: 'CERT_URL' },
+  { name: 'Activation Workshop',                          issuer: '1M1B / AICTE / Salesforce',icon: '✦', url: 'CERT_URL' },
+  { name: 'Ethical Hacking Workshop (2 Days)',             issuer: 'IIT Bhubaneswar',          icon: '■', url: 'CERT_URL' },
+  { name: 'IoT Internship Certificate',                   issuer: 'Jadavpur University',      icon: '●', url: 'CERT_URL' },
+  { name: 'Forensic Science Webinar',                     issuer: 'Adamas University',        icon: '✦', url: 'CERT_URL' },
 ]
 
 const ISSUER_COLOR = {
