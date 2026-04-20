@@ -9,6 +9,8 @@ const NAV_LINKS = [
   { label: 'Contact',  href: '#contact'         },
 ]
 
+const RESUME_URL = `${import.meta.env.BASE_URL}resume.pdf`
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen]         = useState(false)
@@ -58,7 +60,7 @@ export default function Navbar() {
       </ul>
 
       {/* Resume CTA */}
-      <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
+      <a href={RESUME_URL} target="_blank" rel="noopener noreferrer"
          style={{
            fontFamily: 'var(--font-mono)', fontSize: '0.72rem',
            letterSpacing: '0.1em', padding: '0.5rem 1rem',
@@ -94,7 +96,7 @@ export default function Navbar() {
               {label}
             </a>
           ))}
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
+          <a href={RESUME_URL} target="_blank" rel="noopener noreferrer"
              style={{ fontFamily:'var(--font-mono)', fontSize:'0.8rem', padding:'0.6rem 1.5rem', border:'1px solid var(--amber)', color:'var(--amber)', borderRadius:'var(--radius)' }}>
             Resume ↗
           </a>
