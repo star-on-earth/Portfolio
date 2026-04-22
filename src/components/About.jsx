@@ -2,8 +2,8 @@ import { useEffect, useRef } from 'react'
 
 const STATS = [
   { value: '8.44', label: 'CGPA — Semester 5' },
-  { value: '6+',   label: 'Active Projects' },
-  { value: '4',    label: 'Domains: IoT · CV · ML · Data' },
+  { value: '7+',   label: 'Active Projects' },
+  { value: '4',    label: 'Domains: IoT · CV · ML · Data Analytics' },
   { value: '14',   label: 'Certifications' },
 ]
 
