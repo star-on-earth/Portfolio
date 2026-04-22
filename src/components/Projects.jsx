@@ -89,15 +89,29 @@ const PROJECTS = [
       github: 'https://github.com/star-on-earth/SimulatedBomb',      // ← replace
     },
   },
+  {
+    id: '07',
+    title: 'Binary Clock Screensaver',
+    tagline: 'Fullscreen binary clock built with Python + Tkinter',
+    description:
+      'Displays hours, minutes, and seconds as glowing binary LED dots (HH:MM:SS, 4 bits per digit). Runs as a fullscreen Python app or installable Windows .scr screensaver. Also deployable as a web page via GitHub Pages. No external dependencies beyond Python standard library.',
+    stack: ['Python', 'Tkinter', 'PyInstaller', 'HTML', 'CSS', 'JavaScript'],
+    type: 'Utility / Creative',
+    status: 'Complete',
+    highlight: false,
+    links: {
+      github: 'https://github.com/star-on-earth/binary-clock-web',
+    },
+  },
 ]
 
 const TYPE_COLOR = {
-  'Computer Vision': 'var(--cyan)',
-  'Full-Stack Web':  'var(--amber)',
-  'Deep Learning':   '#b57bee',
-  'IoT Systems':     '#5af078',
+  'Computer Vision':  'var(--cyan)',
+  'Full-Stack Web':   'var(--amber)',
+  'Deep Learning':    '#b57bee',
+  'IoT Systems':      '#5af078',
+  'Utility / Creative': '#f472b6',
 }
-
 const STATUS_COLOR = {
   'Active':      { bg:'rgba(90,240,120,0.08)', border:'rgba(90,240,120,0.25)', color:'#5af078' },
   'In Progress': { bg:'rgba(245,166,35,0.08)', border:'rgba(245,166,35,0.25)', color:'var(--amber)' },
