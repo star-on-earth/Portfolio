@@ -4,12 +4,12 @@ const SKILL_GROUPS = [
   {
     category: 'Languages',
     icon: '{ }',
-    skills: ['Python', 'C++', 'Java', 'JavaScript', 'SQL', 'ARM Assembly'],
+    skills: ['Python', 'C++', 'Java', 'JavaScript', 'SQL','PL/SQL','VHDL', 'ARM Assembly', 'HTML', 'CSS'],
   },
   {
     category: 'IoT & Embedded',
     icon: '⚡',
-    skills: ['ESP32', 'Arduino', 'MQTT', 'I2C / SPI', 'LPC2148', 'ThingSpeak', 'AWS IoT Core', 'Embedded C'],
+    skills: ['ESP32', 'Arduino', 'MQTT', 'I2C / SPI', 'LPC2148', 'ThingSpeak', 'AWS IoT Core','PIC16F1', 'Embedded C'],
   },
   {
     category: 'Computer Vision & ML',
@@ -19,17 +19,17 @@ const SKILL_GROUPS = [
   {
     category: 'Web & Cloud',
     icon: '☁',
-    skills: ['React', 'FastAPI', 'Firebase', 'Vercel', 'Railway', 'Oracle Cloud (OCI)', 'Roboflow'],
+    skills: ['React', 'FastAPI', 'Firebase', 'Vercel', 'Railway', 'Oracle Cloud (OCI)'],
   },
   {
     category: 'Tools & Dev',
     icon: '🛠',
-    skills: ['Git', 'Linux', 'VS Code', 'Keil µVision', 'Vivado', 'AutoCAD', 'Wireshark', 'Nmap'],
+    skills: ['Git', 'Linux', 'VS Code', 'Keil µVision', 'Vivado', 'AutoCAD', 'Wireshark', 'Nmap','Google Colab', 'Jupyter Notebook'],
   },
   {
     category: 'Data Analytics',
     icon: '◈',
-    skills: ['Pandas', 'NumPy', 'Matplotlib', 'Power BI', 'Advanced Excel', 'Naive Bayes', 'Clustering', 'MySQL'],
+    skills: ['Pandas', 'NumPy', 'Matplotlib', 'Power BI', 'Advanced Excel', 'Naive Bayes', 'Clustering', 'MySQL', 'Seaborn'],
   },
 ]
 

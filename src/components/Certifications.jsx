@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 
 // ─────────────────────────────────────────────────────────────
 //  HOW TO ADD YOUR CERTIFICATE LINKS:
-//  Replace each "CERT_URL" string below with the actual link.
+//  Replace each 'CERT_URL' string below with the actual link.
 //  Sources:
 //    Oracle  → your Oracle MyLearn profile → Credentials
 //    AWS     → aws.training → Transcript → Certifications
@@ -19,14 +19,47 @@ const CERTS = [
   { name: 'Getting Started with AWS IoT',                 issuer: 'AWS',                     icon: '☁', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'Handling AWS IoT Device Data and States',      issuer: 'AWS',                     icon: '☁', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'Lean Six Sigma Yellow Belt',                   issuer: 'C.S.S.C / Sparen',        icon: '▲', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'IoT Internship Certificate',                   issuer: 'Jadavpur University',      icon: '●', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: '30 Days MasterClass in Full Stack Development', issuer: 'NoviTech R&D Private Limited', icon: '🌐', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'ServiceNow System Administrator Virtual Internship Program', issuer: 'ServiceNow & SmartBridge', icon: '☁️', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Embedded System Developer Virtual Internship', issuer: 'AICTE', icon: '🔌', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'AI for Youth Bootcamp',                        issuer: 'Intel Digital Readiness',  icon: '⚡', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'AI-Driven Project Management',                 issuer: 'UPBUILD Academy',          icon: '⚡', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'Activation Workshop',                          issuer: '1M1B / AICTE / Salesforce',icon: '✦', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'Ethical Hacking Workshop (2 Days)',             issuer: 'IIT Bhubaneswar',          icon: '■', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: 'IoT Internship Certificate',                   issuer: 'Jadavpur University',      icon: '●', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'Forensic Science Webinar',                     issuer: 'Adamas University',        icon: '✦', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Meta React Native Specialization', issuer: 'Meta', icon: '📱', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Meta Front-End Developer Professional Certificate', issuer: 'Meta', icon: '💻', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Capstone (React App)', issuer: 'Meta', icon: '⚛️', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Front-End Developer Capstone', issuer: 'Meta', icon: '🎨', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Coding Interview Preparation', issuer: 'Meta', icon: '🧠', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Advanced React', issuer: 'Meta', icon: '⚛️', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'React Native', issuer: 'Meta', icon: '📱', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Working with Data', issuer: 'Meta', icon: '📊', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Principles of UX/UI Design', issuer: 'Meta', icon: '🎨', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'HTML and CSS in Depth', issuer: 'Meta', icon: '🌐', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Introduction to Front-End Development', issuer: 'Meta', icon: '💻', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'React Basics', issuer: 'Meta', icon: '⚛️', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Programming with JavaScript', issuer: 'Meta', icon: '🟨', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Introduction to Mobile Development', issuer: 'Meta', icon: '📱', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Version Control', issuer: 'Meta', icon: '🔀', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Ethical Decision Making for Success in the Tech Industry', issuer: 'University of Colorado Boulder', icon: '⚖️', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Business Analytics for Decision Making', issuer: 'University of Colorado Boulder', icon: '📈', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Business for Good: Fundamentals of Corporate Responsibility', issuer: 'London Business School', icon: '🌍', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: '8 Bit Microcontrollers: Architecture of the PIC16', issuer: 'Microchip', icon: '📟', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Introduction to the MPLAB X Integrated Development Environment (IDE)', issuer: 'Microchip', icon: '💻', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Getting Started with PIC16F1xxx MCUs using MCC and State Machines', issuer: 'Microchip', icon: '⚙️', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Syntax And Structure of C - Simply C', issuer: 'Microchip', icon: '📘', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Advanced C Programming', issuer: 'Microchip', icon: '🧠', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'C Programming: Linked List Data Structures', issuer: 'Microchip', icon: '🔗', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'C Programming Callbacks', issuer: 'Microchip', icon: '📞', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Advanced Embedded C Tips, Tricks, and Cautions', issuer: 'Microchip', icon: '🛠️', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Design Considerations For Your First IoT Project', issuer: 'Microchip', icon: '🌐', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Exploring Bluetooth Low Energy (BLE) From First Steps To Final Application', issuer: 'Microchip', icon: '📶', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Creating a Sensor Node for Azure IoT Central', issuer: 'Microchip', icon: '☁️', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Motor Control Workshop using dsPIC Digital Signal Controllers (DSC) Dual Core Devices', issuer: 'Microchip', icon: '⚡', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Visual Debugging with MPLAB Data Visualizer', issuer: 'Microchip', icon: '📊', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
 ]
-
 const ISSUER_COLOR = {
   'Oracle': { text:'var(--cyan)',  bg:'rgba(0,212,255,0.07)',   border:'rgba(0,212,255,0.2)'   },
   'AWS':    { text:'var(--amber)', bg:'rgba(245,166,35,0.07)',  border:'rgba(245,166,35,0.2)'  },
@@ -64,13 +97,13 @@ export default function Certifications() {
           Verified learning<span style={{ color:'var(--amber)' }}>.</span>
         </h2>
         <p style={{ color:'var(--muted)', marginBottom:'3rem', maxWidth:'500px', fontWeight:300 }}>
-          14 credentials across cloud, AI, IoT, and security. Click any to view.
+          48 credentials across cloud, AI, IoT, and security. Click any to view.
         </p>
 
         <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(300px, 1fr))', gap:'0.85rem' }}>
           {CERTS.map(({ name, issuer, icon, url }) => {
             const c = getColor(issuer)
-            const hasLink = url && url !== 'CERT_URL'
+            const hasLink = url && url !== 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link'
 
             return (
               <button key={name} className="cert-item"

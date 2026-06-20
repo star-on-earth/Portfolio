@@ -8,7 +8,7 @@ const NAV_LINKS = [
   { label: 'Certs',    href: '#certifications'  },
   { label: 'Contact',  href: '#contact'         },
 ]
-const RESUME_URL = `${import.meta.env.BASE_URL}resume.pdf`
+const RESUME_URL = `https://drive.google.com/file/d/17yrztUL2AIygBFejpBKH677d4OFxyQNQ/view?usp=drive_link`
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen]         = useState(false)

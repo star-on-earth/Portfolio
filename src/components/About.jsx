@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react'
 
 const STATS = [
-  { value: '8.44', label: 'CGPA — Semester 5' },
+  { value: '8.55', label: 'CGPA — Semester 6' },
   { value: '7+',   label: 'Active Projects' },
-  { value: '4',    label: 'Domains: IoT · CV · ML · Data Analytics' },
-  { value: '14',   label: 'Certifications' },
+  { value: '4',    label: 'Domains: IoT · CV · ML · Data Science' },
+  { value: '48',   label: 'Certifications' },
 ]
 
 export default function About() {
@@ -40,7 +40,7 @@ export default function About() {
             <div style={{ display:'flex', flexDirection:'column', gap:'1rem', color:'var(--muted)', fontWeight:300, lineHeight:1.85 }}>
               <p className="reveal">
                 I'm Avrrodeep — a Computer Science & Systems Engineering student at KIIT University,
-                Bhubaneswar (CGPA 8.44). My work spans embedded hardware, intelligent vision,
+                Bhubaneswar (CGPA 8.55). My work spans embedded hardware, intelligent vision,
                 data analytics, and robust software.
               </p>
               <p className="reveal">
@@ -70,9 +70,9 @@ export default function About() {
               <div style={{ color:'var(--text)', lineHeight:1.9 }}>
                 <span style={{ color:'var(--muted)' }}>{'{'}</span><br />
                 &nbsp;&nbsp;<span style={{ color:'var(--cyan)' }}>"role"</span>: <span style={{ color:'#c8e6a0' }}>"CS &amp; Systems Engineer"</span>,<br />
-                &nbsp;&nbsp;<span style={{ color:'var(--cyan)' }}>"domains"</span>: [<span style={{ color:'#c8e6a0' }}>"IoT"</span>, <span style={{ color:'#c8e6a0' }}>"CV"</span>, <span style={{ color:'#c8e6a0' }}>"ML"</span>, <span style={{ color:'#c8e6a0' }}>"Data Analytics"</span>],<br />
-                &nbsp;&nbsp;<span style={{ color:'var(--cyan)' }}>"cgpa"</span>: <span style={{ color:'#c8e6a0' }}>"8.44 / 10"</span>,<br />
-                &nbsp;&nbsp;<span style={{ color:'var(--cyan)' }}>"open_to"</span>: <span style={{ color:'#c8e6a0' }}>"Internships &amp; Research"</span><br />
+                &nbsp;&nbsp;<span style={{ color:'var(--cyan)' }}>"domains"</span>: [<span style={{ color:'#c8e6a0' }}>"IoT"</span>, <span style={{ color:'#c8e6a0' }}>"CV"</span>, <span style={{ color:'#c8e6a0' }}>"ML"</span>, <span style={{ color:'#c8e6a0' }}>"Data Science"</span>],<br />
+                &nbsp;&nbsp;<span style={{ color:'var(--cyan)' }}>"cgpa"</span>: <span style={{ color:'#c8e6a0' }}>"8.55 / 10"</span>,<br />
+                &nbsp;&nbsp;<span style={{ color:'var(--cyan)' }}>"open_to"</span>: <span style={{ color:'#c8e6a0' }}>"Internships,Jobs &amp; Research"</span><br />
                 <span style={{ color:'var(--muted)' }}>{'}'}</span>
               </div>
             </div>

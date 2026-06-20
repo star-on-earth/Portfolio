@@ -103,6 +103,34 @@ const PROJECTS = [
       github: 'https://github.com/star-on-earth/binary-clock-web',
     },
   },
+  {
+    id: '08',
+    title: 'Credit Card Fraud Detection',
+    tagline: 'Machine learning model for detecting fraudulent credit card transactions.',
+    description:
+      'Developed a machine learning model to identify fraudulent credit card transactions. Utilized the XGBoost algorithm for classification and applied SMOTE (Synthetic Minority Over-sampling Technique) to address class imbalance in the dataset. Evaluated model performance using metrics such as accuracy, precision, recall, and F1-score. Also built a Streamlit dashboard for visualizing model predictions and performance metrics.',
+    stack: ['Python', 'XGBoost', 'SMOTE', 'Scikit-learn', 'Streamlit'],
+    type: 'Deep Learning',
+    status: 'Complete',
+    highlight: false,
+    links: {
+      github: 'https://github.com/star-on-earth/Credit-Card-Fraud-Detection',
+    },
+  },
+  {
+    id: '09',
+    title: 'ARStudio',
+    tagline: 'Augmented reality app for interactive 3D object visualization.',
+    description:
+      'Developed an augmented reality application that allows users to visualize and interact with 3D objects in real-time. Utilized ARCore (for Android) to implement marker-based and markerless AR experiences. The app supports features such as object scaling, rotation, and placement in the real world. Built using Unity3D for cross-platform compatibility.',
+    stack: ['Python','Unity3D', 'ARCore', 'Expo Go', 'JavaScript', 'C#', '3D Modeling'],
+    type: 'Utility / Creative',
+    status: 'In Progress',
+    highlight: false,
+    links: {
+      github: 'https://github.com/star-on-earth/ARStudio',
+    },
+  },
 ]
 
 const TYPE_COLOR = {
