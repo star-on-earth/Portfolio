@@ -34,7 +34,7 @@ const CERTS = [
   { name: 'Front-End Developer Capstone', issuer: 'Meta', icon: '🎨', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'Coding Interview Preparation', issuer: 'Meta', icon: '🧠', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'Advanced React', issuer: 'Meta', icon: '⚛️', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: 'React Native', issuer: 'Meta', icon: '📱', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'React Native Specialization Certificate', issuer: 'Meta', icon: '📱', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'Working with Data', issuer: 'Meta', icon: '📊', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'Principles of UX/UI Design', issuer: 'Meta', icon: '🎨', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'HTML and CSS in Depth', issuer: 'Meta', icon: '🌐', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
@@ -59,6 +59,10 @@ const CERTS = [
   { name: 'Creating a Sensor Node for Azure IoT Central', issuer: 'Microchip', icon: '☁️', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'Motor Control Workshop using dsPIC Digital Signal Controllers (DSC) Dual Core Devices', issuer: 'Microchip', icon: '⚡', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'Visual Debugging with MPLAB Data Visualizer', issuer: 'Microchip', icon: '📊', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Industrial Training/Internship at Ardent Software on DATA SCIENCE, AI, MACHINE LEARNING USING PYTHON', issuer: 'ARDENT SOFTWARE SERVICES', icon: '📊', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: '30 Days MasterClass in Data Analytics', issuer: 'NoviTech R&D Private Limited', icon: '📊', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: '30 Days MasterClass in Full Stack Development', issuer: 'NoviTech R&D Private Limited', icon: '📊', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+
 ]
 const ISSUER_COLOR = {
   'Oracle': { text:'var(--cyan)',  bg:'rgba(0,212,255,0.07)',   border:'rgba(0,212,255,0.2)'   },

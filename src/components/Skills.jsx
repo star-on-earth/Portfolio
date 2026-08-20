@@ -27,9 +27,14 @@ const SKILL_GROUPS = [
     skills: ['Git', 'Linux', 'VS Code', 'Keil µVision', 'Vivado', 'AutoCAD', 'Wireshark', 'Nmap','Google Colab', 'Jupyter Notebook'],
   },
   {
-    category: 'Data Analytics',
+    category: 'Data Science and Analytics',
     icon: '◈',
     skills: ['Pandas', 'NumPy', 'Matplotlib', 'Power BI', 'Advanced Excel', 'Naive Bayes', 'Clustering', 'MySQL', 'Seaborn'],
+  },
+  {
+    category: 'Full Stack Development',
+    icon: '◈',
+    skills: ['React', 'Node.js', 'Express', 'MongoDB', 'PostgreSQL', 'NoSQL', 'Docker', 'Kubernetes', 'AWS', 'Azure', 'CI/CD', 'REST APIs', 'GraphQL'],
   },
 ]
 
