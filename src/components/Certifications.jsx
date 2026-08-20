@@ -59,7 +59,7 @@ const CERTS = [
   { name: 'Creating a Sensor Node for Azure IoT Central', issuer: 'Microchip', icon: '☁️', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'Motor Control Workshop using dsPIC Digital Signal Controllers (DSC) Dual Core Devices', issuer: 'Microchip', icon: '⚡', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'Visual Debugging with MPLAB Data Visualizer', issuer: 'Microchip', icon: '📊', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: 'Industrial Training/Internship at Ardent Software on DATA SCIENCE, AI, MACHINE LEARNING USING PYTHON', issuer: 'ARDENT SOFTWARE SERVICES', icon: '📊', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
+  { name: 'Industrial Training/Internship on DATA SCIENCE, AI, MACHINE LEARNING USING PYTHON', issuer: 'ARDENT SOFTWARE SERVICES', icon: '📊', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: '30 Days MasterClass in Data Analytics', issuer: 'NoviTech R&D Private Limited', icon: '📊', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: '30 Days MasterClass in Full Stack Development', issuer: 'NoviTech R&D Private Limited', icon: '📊', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
 
@@ -101,7 +101,7 @@ export default function Certifications() {
           Verified learning<span style={{ color:'var(--amber)' }}>.</span>
         </h2>
         <p style={{ color:'var(--muted)', marginBottom:'3rem', maxWidth:'500px', fontWeight:300 }}>
-          48 credentials across cloud, AI, IoT, and security. Click any to view.
+          51 credentials across cloud, AI, IoT, and security. Click any to view.
         </p>
 
         <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(300px, 1fr))', gap:'0.85rem' }}>
