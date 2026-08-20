@@ -4,7 +4,7 @@ const STATS = [
   { value: '8.55', label: 'CGPA — Semester 6' },
   { value: '7+',   label: 'Active Projects' },
   { value: '4',    label: 'Domains: IoT · CV · ML · Data Science' },
-  { value: '48',   label: 'Certifications' },
+  { value: '51',   label: 'Certifications' },
 ]
 
 export default function About() {
