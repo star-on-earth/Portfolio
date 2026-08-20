@@ -20,7 +20,6 @@ const CERTS = [
   { name: 'Handling AWS IoT Device Data and States',      issuer: 'AWS',                     icon: '☁', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'Lean Six Sigma Yellow Belt',                   issuer: 'C.S.S.C / Sparen',        icon: '▲', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'IoT Internship Certificate',                   issuer: 'Jadavpur University',      icon: '●', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
-  { name: '30 Days MasterClass in Full Stack Development', issuer: 'NoviTech R&D Private Limited', icon: '🌐', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'ServiceNow System Administrator Virtual Internship Program', issuer: 'ServiceNow & SmartBridge', icon: '☁️', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'Embedded System Developer Virtual Internship', issuer: 'AICTE', icon: '🔌', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
   { name: 'AI for Youth Bootcamp',                        issuer: 'Intel Digital Readiness',  icon: '⚡', url: 'https://drive.google.com/drive/folders/1irkb51wsRDOshpuZe41YdjOImSoyFI_A?usp=drive_link' },
@@ -101,7 +100,7 @@ export default function Certifications() {
           Verified learning<span style={{ color:'var(--amber)' }}>.</span>
         </h2>
         <p style={{ color:'var(--muted)', marginBottom:'3rem', maxWidth:'500px', fontWeight:300 }}>
-          51 credentials across cloud, AI, IoT, and security. Click any to view.
+          50 credentials across cloud, AI, IoT, and security. Click any to view.
         </p>
 
         <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill, minmax(300px, 1fr))', gap:'0.85rem' }}>
